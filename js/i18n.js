@@ -85,12 +85,20 @@ const translations = {
     "services.c3_f5": "Priority follow-up counter assistance for repeat customers",
     "services.c3_btn": "Learn About Support",
 
-    // Testimonials Section
+    // Testimonials Section & Customer Photo Gallery
     "test.badge": "Verified Community Trust",
-    "test.title": "Happy Customers",
-    "test.desc": "Real feedback from residents and local businesses in Lawan who trust Rahul Mobile Services Lawan for their mobile needs.",
+    "test.title": "Happy Customers & Delivery Gallery",
+    "test.desc": "Real feedback and smiling customer delivery moments from residents who trust Rahul Mobile Services Lawan.",
+    "test.gallery_title": "Full-Size Customer Delivery Photo Gallery",
+    "test.gallery_desc": "Real customers proudly holding their newly purchased smartphones and precision-repaired devices at our Lawan counter.",
+    "test.filter_all": "All Handover Moments",
+    "test.filter_sales": "New Smartphone Sales",
+    "test.filter_repair": "Precision Repairs",
+    "test.reviews_tab": "Customer Reviews & Ratings",
+    "test.gallery_tab": "Customer Photo Gallery",
     "test.rating_text": "Overall Rating from Lawan Customers",
     "test.verified_badge": "Verified Customer",
+    "test.device_label": "Device Handover",
 
     // Why Choose Us
     "why.badge": "Trust & Reliability",
@@ -243,12 +251,20 @@ const translations = {
     "services.c3_f5": "हमारे नियमित ग्राहकों के लिए काउंटर पर प्राथमिकता सेवा",
     "services.c3_btn": "सपोर्ट के बारे में जानें",
 
-    // Testimonials Section
+    // Testimonials Section & Customer Photo Gallery
     "test.badge": "सत्यापित स्थानीय भरोसा",
-    "test.title": "संतुष्ट ग्राहक",
-    "test.desc": "लवन और आसपास के क्षेत्रों के वास्तविक निवासियों के अनुभव, जो Rahul Mobile Services Lawan पर भरोसा करते हैं।",
+    "test.title": "संतुष्ट ग्राहक एवं डिलीवरी गैलरी",
+    "test.desc": "लवन और आसपास के क्षेत्रों के वास्तविक ग्राहकों के अनुभव और नए फोन के साथ उनकी मुस्कान।",
+    "test.gallery_title": "फुल-साइज कस्टमर डिलीवरी फोटो गैलरी",
+    "test.gallery_desc": "Rahul Mobile Services Lawan से खरीदे गए नए स्मार्टफोन्स और रिपेयर कराए गए मोबाइल्स को हाथ में थामे हमारे मुस्कुराते ग्राहकों की झलकियां।",
+    "test.filter_all": "सभी डिलीवरी एवं हैंडओवर",
+    "test.filter_sales": "नए स्मार्टफोन की खरीदारी",
+    "test.filter_repair": "सटीक रिपेयरिंग हैंडओवर",
+    "test.reviews_tab": "समीक्षाएं एवं रेटिंग्स",
+    "test.gallery_tab": "कस्टमर फोटो गैलरी",
     "test.rating_text": "लवन के ग्राहकों द्वारा समग्र रेटिंग",
     "test.verified_badge": "सत्यापित ग्राहक",
+    "test.device_label": "हैंडओवर डिवाइस",
 
     // Why Choose Us
     "why.badge": "भरोसा एवं विश्वसनीयता",

@@ -104,6 +104,178 @@ async function renderPublicReviews() {
 // Make accessible to Admin module
 window.renderPublicReviews = renderPublicReviews;
 
+let currentGalleryFilter = 'all';
+
+/**
+ * Public Customer Delivery Photo Gallery Rendering
+ * Displays full-size smiling customer photos with device model & handover tags.
+ */
+async function renderPublicGallery(filter = currentGalleryFilter) {
+  currentGalleryFilter = filter;
+  const container = document.getElementById('customerGalleryGrid');
+  if (!container) return;
+
+  try {
+    const allPhotos = await window.ReviewStorageAPI.getAllPhotos();
+    const filteredPhotos = filter === 'all' 
+      ? allPhotos 
+      : allPhotos.filter(p => p.category === filter);
+
+    if (filteredPhotos.length === 0) {
+      container.innerHTML = `
+        <div style="grid-column: 1/-1; text-align: center; padding: 3rem; background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0;">
+          <p style="color: #64748b; font-size: 1rem;">No customer delivery photos found in this category.</p>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = filteredPhotos.map(p => {
+      const badgeText = p.badgeText || (p.category === 'repair' ? 'Screen Restored' : 'Phone Delivery');
+      return `
+        <div class="gallery-card" data-id="${p.id}" role="button" tabindex="0" aria-label="View photo of ${escapeHtml(p.customerName)} holding ${escapeHtml(p.device)}">
+          <div class="gallery-image-frame">
+            <img src="${p.photo}" alt="${escapeHtml(p.customerName)} smiling with ${escapeHtml(p.device)}" loading="lazy">
+            <span class="gallery-card-badge">${escapeHtml(badgeText)}</span>
+          </div>
+          <div class="gallery-card-content">
+            <div class="gallery-device-pill">
+              <svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+              <span>${escapeHtml(p.device)}</span>
+            </div>
+            <h4 class="gallery-customer-name">${escapeHtml(p.customerName)}</h4>
+            <span class="gallery-customer-loc">${escapeHtml(p.location || 'Lawan, Chhattisgarh')}</span>
+            <p class="gallery-customer-note">"${escapeHtml(p.note || 'Very pleased with device handover at Rahul Mobile Services Lawan.')}"</p>
+            <div class="gallery-card-footer">
+              <span>${p.date}</span>
+              <span class="gallery-view-hint">
+                <span>View Full Photo</span>
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:currentColor;"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    // Attach click listeners to open Lightbox
+    container.querySelectorAll('.gallery-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const id = card.getAttribute('data-id');
+        const photoItem = allPhotos.find(p => p.id === id);
+        if (photoItem) openGalleryLightbox(photoItem);
+      });
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          const id = card.getAttribute('data-id');
+          const photoItem = allPhotos.find(p => p.id === id);
+          if (photoItem) openGalleryLightbox(photoItem);
+        }
+      });
+    });
+
+  } catch (err) {
+    console.error('Error rendering public photo gallery:', err);
+  }
+}
+
+window.renderPublicGallery = renderPublicGallery;
+
+/**
+ * Gallery Lightbox Modal Handling
+ */
+function openGalleryLightbox(item) {
+  const backdrop = document.getElementById('galleryLightboxBackdrop');
+  if (!backdrop) return;
+
+  document.getElementById('lightboxImg').src = item.photo;
+  document.getElementById('lightboxBadge').textContent = item.badgeText || (item.category === 'repair' ? 'Screen Restored' : 'Phone Delivery');
+  document.getElementById('lightboxCategory').textContent = item.category === 'repair' ? 'Precision Hardware Repair' : 'Smartphone Sales Handover';
+  document.getElementById('lightboxCustomerName').textContent = item.customerName;
+  document.getElementById('lightboxLocation').textContent = item.location || 'Lawan, Chhattisgarh';
+  document.getElementById('lightboxDevice').textContent = item.device;
+  document.getElementById('lightboxNote').textContent = item.note || 'Extremely happy with the service and device delivery at Rahul Mobile Services Lawan.';
+  document.getElementById('lightboxDate').textContent = item.date;
+
+  backdrop.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeGalleryLightbox() {
+  const backdrop = document.getElementById('galleryLightboxBackdrop');
+  if (backdrop) {
+    backdrop.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+function setupGalleryLightboxEvents() {
+  const backdrop = document.getElementById('galleryLightboxBackdrop');
+  const closeBtn = document.getElementById('lightboxCloseBtn');
+
+  if (closeBtn) closeBtn.addEventListener('click', closeGalleryLightbox);
+  if (backdrop) {
+    backdrop.addEventListener('click', (e) => {
+      if (e.target === backdrop) closeGalleryLightbox();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if ((e.key === 'Escape' || e.key === 'Esc') && backdrop && backdrop.classList.contains('active')) {
+      closeGalleryLightbox();
+    }
+  });
+}
+
+function setupGalleryFilterButtons() {
+  const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter') || 'all';
+      renderPublicGallery(filter);
+    });
+  });
+}
+
+/**
+ * Real-Time Inquiry Badges & Counters
+ */
+async function updateInquiryBadges() {
+  try {
+    const unreadCount = await window.ReviewStorageAPI.getUnreadInquiriesCount();
+    const navBadge = document.getElementById('navInquiryBadge');
+    const drawerBadge = document.getElementById('mobileDrawerInquiryBadge');
+    const adminTabBadge = document.getElementById('adminInquiryTabBadge');
+    const alertCountText = document.getElementById('inquiryAlertCountText');
+
+    if (navBadge) {
+      navBadge.textContent = unreadCount;
+      navBadge.style.display = unreadCount > 0 ? 'inline-flex' : 'none';
+    }
+
+    if (drawerBadge) {
+      drawerBadge.textContent = unreadCount;
+      drawerBadge.style.display = unreadCount > 0 ? 'inline-flex' : 'none';
+    }
+
+    if (adminTabBadge) {
+      adminTabBadge.textContent = unreadCount;
+      adminTabBadge.style.display = unreadCount > 0 ? 'inline-flex' : 'none';
+    }
+
+    if (alertCountText) {
+      alertCountText.textContent = `${unreadCount} New Inquiries`;
+    }
+  } catch (e) {
+    console.warn('Could not update inquiry badges:', e);
+  }
+}
+
+window.updateInquiryBadges = updateInquiryBadges;
+
 /**
  * Mobile Navigation Drawer Management
  */
@@ -283,17 +455,32 @@ document.addEventListener('DOMContentLoaded', () => {
     window.I18n.init();
   }
 
-  // 2. Render Initial Reviews from Persistent Storage
+  // 2. Render Initial Reviews & Full-Size Photo Gallery from Persistent Storage
   renderPublicReviews();
+  renderPublicGallery();
 
   // 3. Setup Navigation & Interactivity
   setupMobileNavigation();
   setupInquiryForm();
   setupScrollSpy();
   setupServiceEstimateTriggers();
+  setupGalleryFilterButtons();
+  setupGalleryLightboxEvents();
+
+  // 4. Update Live Inquiry Notification Badges
+  updateInquiryBadges();
 
   // Listen for language changes to update dynamic review count label
   window.addEventListener('languageChanged', () => {
     renderPublicReviews();
+    renderPublicGallery();
+  });
+
+  // Listen for real-time inquiry events
+  window.addEventListener('inquiryAdded', () => {
+    updateInquiryBadges();
+  });
+  window.addEventListener('inquiryUpdated', () => {
+    updateInquiryBadges();
   });
 });

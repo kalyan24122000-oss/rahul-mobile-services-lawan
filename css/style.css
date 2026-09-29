@@ -1834,3 +1834,300 @@ ul, ol {
     opacity: 1;
   }
 }
+
+/* ==========================================================================
+   Full-Size Customer Photo Gallery & Delivery Moments Showcase
+   ========================================================================== */
+.gallery-showcase-wrapper {
+  margin-bottom: 3.5rem;
+}
+
+.gallery-tabs-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.gallery-filter-btn {
+  padding: 0.5rem 1.125rem;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  min-height: 40px;
+}
+
+.gallery-filter-btn:hover {
+  border-color: var(--brand-blue);
+  color: var(--brand-blue);
+  background-color: var(--brand-blue-light);
+}
+
+.gallery-filter-btn.active {
+  background-color: var(--brand-blue);
+  color: #ffffff;
+  border-color: var(--brand-blue);
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+}
+
+/* Full-Size Photo Cards Grid */
+.customer-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+  .customer-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .customer-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.gallery-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-standard), box-shadow var(--transition-standard), border-color var(--transition-standard);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--brand-blue-border);
+}
+
+.gallery-image-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-color: var(--bg-surface-alt);
+  overflow: hidden;
+}
+
+.gallery-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.gallery-card:hover .gallery-image-frame img {
+  transform: scale(1.03);
+}
+
+.gallery-card-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: rgba(15, 35, 71, 0.88);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 0.725rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.02em;
+  z-index: 2;
+}
+
+.gallery-card-content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.gallery-device-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: var(--brand-blue-light);
+  color: var(--brand-navy);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.625rem;
+  width: fit-content;
+}
+
+.gallery-device-pill svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}
+
+.gallery-customer-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.gallery-customer-loc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.gallery-customer-note {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  font-style: italic;
+}
+
+.gallery-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.gallery-view-hint {
+  font-weight: 600;
+  color: var(--brand-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Lightbox Modal */
+.gallery-lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(6px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-standard), visibility var(--transition-standard);
+}
+
+.gallery-lightbox-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery-lightbox-modal {
+  background-color: #ffffff;
+  border-radius: var(--radius-xl);
+  max-width: 840px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .gallery-lightbox-modal {
+    grid-template-columns: 1fr;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+}
+
+.lightbox-image-box {
+  background-color: var(--bg-surface-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lightbox-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lightbox-content-box {
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.lightbox-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--bg-surface-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.lightbox-close-btn:hover {
+  background-color: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+}
+
+.lightbox-close-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* Inquiry Notification Badges */
+.inquiry-badge-counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-full);
+  margin-left: 0.35rem;
+  animation: pulseBadge 2s infinite;
+}
+
+@keyframes pulseBadge {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
