@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Rahul Mobile Services Lawan — Retail Smartphone Sales, Precision Hardware Repairs & After-Sales</title>
+  <meta name="description" content="Official website of Rahul Mobile Services Lawan. Precision smartphone repair, retail mobile sales, genuine accessories, and dependable after-sales services in Lawan, Chhattisgarh.">
+  <meta name="theme-color" content="#0f2347">
+  
+  <!-- Corporate Light Theme Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'><path d='M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z'/></svg>">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. Top Welcome Banner (Bilingual Greeting by Default + Language Toggle)
+       ========================================================================== -->
+  <header class="top-welcome-banner" role="banner">
+    <div class="container top-banner-inner">
+      <div class="top-greeting">
+        <svg class="top-greeting-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+        </svg>
+        <span class="top-greeting-en">Welcome to Rahul Mobile Services Lawan</span>
+        <span class="top-greeting-divider" aria-hidden="true">|</span>
+        <span class="top-greeting-hi">राहुल मोबाइल सर्विसेज लवन में आपका स्वागत है</span>
+      </div>
+
+      <div class="top-banner-controls">
+        <span class="top-contact-hint">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          <span data-i18n="top.hours">Mon - Sun: 9:30 AM - 8:30 PM</span>
+        </span>
+
+        <!-- Top-Right Language Switcher (EN | हिंदी) -->
+        <div class="lang-toggle-wrapper" role="group" aria-label="Language Selector">
+          <button type="button" class="lang-btn lang-btn-en active" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn lang-btn-hi" aria-pressed="false">हिंदी</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. Sticky Header & Navigation
+       ========================================================================== -->
+  <nav class="main-header" aria-label="Main Navigation">
+    <div class="container header-inner">
+      <!-- Brand Logo & Identity -->
+      <a href="#home" class="brand-identity" aria-label="Rahul Mobile Services Lawan - Home">
+        <div class="brand-logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title">Rahul Mobile Services Lawan</span>
+          <span class="brand-subtitle" data-i18n="brand.sub">Sales • Precision Repair • After-Sales | Lawan, CG</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="#testimonials" class="nav-link" data-i18n="nav.customers">Happy Customers</a></li>
+          <li><a href="#why-us" class="nav-link" data-i18n="nav.why_us">Why Choose Us</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">About Us</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Discreet Admin Login Button -->
+        <button type="button" class="btn-ghost-admin btn-admin-trigger" title="Store Owner Administration">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          <span data-i18n="nav.admin_login">Admin Login</span>
+        </button>
+
+        <!-- Primary CTA -->
+        <a href="#contact" class="btn btn-primary" data-i18n="nav.get_started">Book Repair</a>
+
+        <!-- Mobile Drawer Menu Toggle -->
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu & Overlay -->
+  <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop" aria-hidden="true"></div>
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="brand-text-block">
+        <span class="brand-title" style="font-size: 1rem;">Rahul Mobile Services Lawan</span>
+        <span class="brand-subtitle">Lawan, Chhattisgarh</span>
+      </div>
+      <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Navigation Menu">
+        <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:currentColor;"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-links">
+      <a href="#home" class="mobile-drawer-link" data-i18n="nav.home">Home</a>
+      <a href="#services" class="mobile-drawer-link" data-i18n="nav.services">Services</a>
+      <a href="#testimonials" class="mobile-drawer-link" data-i18n="nav.customers">Happy Customers</a>
+      <a href="#why-us" class="mobile-drawer-link" data-i18n="nav.why_us">Why Choose Us</a>
+      <a href="#about" class="mobile-drawer-link" data-i18n="nav.about">About Us</a>
+      <a href="#contact" class="mobile-drawer-link" data-i18n="nav.contact">Contact</a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <a href="tel:+919876543210" class="btn btn-primary" style="width:100%;">
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <span>+91 98765 43210</span>
+      </a>
+      <button type="button" class="btn btn-secondary btn-admin-trigger" style="width:100%;">
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:currentColor;"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+        <span data-i18n="nav.admin_login">Admin Login</span>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         3. Commercial Hero Section
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <!-- Hero Left Column Content -->
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            <span data-i18n="hero.badge">Official Store & Precision Repair Centre in Lawan</span>
+          </div>
+
+          <h1 class="hero-headline" data-i18n="hero.headline">Reliable Mobile Solutions</h1>
+          <h2 class="hero-subheadline" data-i18n="hero.subheadline">Rahul Mobile Services Lawan</h2>
+
+          <p class="hero-description" data-i18n="hero.description">
+            Professional smartphone repair, genuine accessories, mobile sales, and dependable after-sales assistance — delivered all under one roof with transparent pricing.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary" data-i18n="hero.btn_services">Explore Services</a>
+            <a href="#contact" class="btn btn-secondary" data-i18n="hero.btn_contact">Contact Us</a>
+          </div>
+
+          <!-- Hero Metric Badges -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <div class="metric-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              </div>
+              <span class="metric-label" data-i18n="hero.metric_1">100% Genuine Tested Parts</span>
+            </div>
+
+            <div class="metric-item">
+              <div class="metric-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              </div>
+              <span class="metric-label" data-i18n="hero.metric_2">Quick Turnaround Time</span>
+            </div>
+
+            <div class="metric-item">
+              <div class="metric-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <span class="metric-label" data-i18n="hero.metric_3">Located in Lawan, Chhattisgarh</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Active Diagnostic Mockup Card -->
+        <div class="hero-tech-card">
+          <div class="tech-card-header">
+            <div class="tech-card-title-group">
+              <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#60a5fa;" aria-hidden="true"><path d="M22 11V3h-7v3H9V3H2v8h7V8h2v10h4v3h7v-8h-7v3h-2V8h2v3h7z"/></svg>
+              <span class="tech-card-title" data-i18n="hero.card_title">Store & Diagnostic Counter</span>
+            </div>
+            <div class="tech-status-badge">
+              <span class="status-dot"></span>
+              <span data-i18n="hero.status_open">Counter Open Today until 8:30 PM</span>
+            </div>
+          </div>
+
+          <div class="tech-card-body">
+            <!-- Diagnostic Item 1 -->
+            <div class="diagnostic-item">
+              <div class="diagnostic-info">
+                <div class="diag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 6h16v10H4V6zm18-2H2c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-3 14H5v-2h14v2z"/></svg>
+                </div>
+                <div class="diag-text">
+                  <h4 data-i18n="hero.diag_1_title">Screen & Glass Replacement</h4>
+                  <p data-i18n="hero.diag_1_sub">Express 45-Min Fix • OEM Grade Displays</p>
+                </div>
+              </div>
+              <span class="diag-badge" data-i18n="hero.diag_1_badge">Express Service</span>
+            </div>
+
+            <!-- Diagnostic Item 2 -->
+            <div class="diagnostic-item">
+              <div class="diagnostic-info">
+                <div class="diag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM11 20v-5.5H9L13 7v5.5h2L11 20z"/></svg>
+                </div>
+                <div class="diag-text">
+                  <h4 data-i18n="hero.diag_2_title">Battery & Charging Ports</h4>
+                  <p data-i18n="hero.diag_2_sub">Tested Cells • Safe High-Amp Pin Repairs</p>
+                </div>
+              </div>
+              <span class="diag-badge" data-i18n="hero.diag_2_badge">Genuine Parts</span>
+            </div>
+
+            <!-- Diagnostic Item 3 -->
+            <div class="diagnostic-item">
+              <div class="diagnostic-info">
+                <div class="diag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8zM7.83 14c.37 0 .67.26.74.62.41 2.22 2.28 2.98 3.64 2.87.43-.02.79.32.79.75 0 .4-.32.73-.72.75-1.95.13-4.52-.94-5.18-3.99-.08-.47.25-.9.73-1z"/></svg>
+                </div>
+                <div class="diag-text">
+                  <h4 data-i18n="hero.diag_3_title">Water Damage Recovery</h4>
+                  <p data-i18n="hero.diag_3_sub">Ultrasonic Board Clean & Chip Soldering</p>
+                </div>
+              </div>
+              <span class="diag-badge" data-i18n="hero.diag_3_badge">Deep Diagnostics</span>
+            </div>
+
+            <!-- Diagnostic Item 4 -->
+            <div class="diagnostic-item">
+              <div class="diagnostic-info">
+                <div class="diag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14zM8 6h8v2H8V6zm0 3h8v2H8V9zm0 3h8v2H8v-2z"/></svg>
+                </div>
+                <div class="diag-text">
+                  <h4 data-i18n="hero.diag_4_title">Smartphone & Keypad Sales</h4>
+                  <p data-i18n="hero.diag_4_sub">Latest 5G Models • Budget Keypad Phones</p>
+                </div>
+              </div>
+              <span class="diag-badge" data-i18n="hero.diag_4_badge">Warranty Backed</span>
+            </div>
+          </div>
+
+          <div class="tech-card-footer">
+            <span data-i18n="hero.card_footer_loc">Main Road Market, Lawan</span>
+            <strong>Rahul Mobile Services Lawan</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. Services Section ("Services by Rahul Mobile Services Lawan")
+         ========================================================================== -->
+    <section class="services-section section-padding" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge" data-i18n="services.badge">Our Core Capabilities</div>
+          <h2 class="section-title" data-i18n="services.title">Services by Rahul Mobile Services Lawan</h2>
+          <p class="section-description" data-i18n="services.desc">
+            Precision engineering, genuine mobile technology, and lifelong customer commitment for the residents of Lawan and Baloda Bazar district.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Top Quality Repairing Services -->
+          <article class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+            </div>
+            <h3 class="service-title" data-i18n="services.c1_title">Top Quality Repairing Services</h3>
+            <p class="service-summary" data-i18n="services.c1_desc">
+              Hardware-level precision repairs with advanced diagnostics and tested replacement components.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c1_f1">Express screen & display fixes (AMOLED, OLED, LCD)</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c1_f2">Battery & charging jack replacements (Type-C, Micro-USB)</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c1_f3">Mic, speaker, camera module, and motherboard diagnostics</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c1_f4">Water damage recovery and micro-soldering solutions</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c1_f5">Zero hidden charges with upfront diagnostic quotes</span>
+              </li>
+            </ul>
+            <div class="service-card-action">
+              <button type="button" class="btn btn-secondary btn-service-trigger" data-service-val="Hardware Repair (Screen, Battery, Port)" data-i18n="services.c1_btn">Request Repair Estimate</button>
+            </div>
+          </article>
+
+          <!-- Card 2: Mobile Sales Services -->
+          <article class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z"/></svg>
+            </div>
+            <h3 class="service-title" data-i18n="services.c2_title">Mobile Sales Services</h3>
+            <p class="service-summary" data-i18n="services.c2_desc">
+              Carefully curated smartphones, keypad phones, and genuine brand accessories at competitive local prices.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c2_f1">Quality-verified new smartphone models and keypad devices</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c2_f2">Expert device selection guidance tailored to customer budget</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c2_f3">Original fast adapters, cables, tempered glass & cases</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c2_f4">Easy initial device setup, unboxing, and SIM provisioning</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c2_f5">Official brand warranty and verified purchase billing</span>
+              </li>
+            </ul>
+            <div class="service-card-action">
+              <button type="button" class="btn btn-secondary btn-service-trigger" data-service-val="New Mobile Phone Sales" data-i18n="services.c2_btn">Inquire About Models</button>
+            </div>
+          </article>
+
+          <!-- Card 3: After-Sales Services -->
+          <article class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <h3 class="service-title" data-i18n="services.c3_title">After-Sales Services</h3>
+            <p class="service-summary" data-i18n="services.c3_desc">
+              End-to-end continuous support to keep your smartphones running smoothly throughout their lifecycle.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c3_f1">Dedicated post-purchase customer support & troubleshooting</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c3_f2">Software updates, OS optimization, and cache clearance</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c3_f3">Secure data backup, WhatsApp chat migration & contact sync</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c3_f4">Long-term customer service guarantee and satisfaction checks</span>
+              </li>
+              <li class="service-feature-item">
+                <span class="service-feature-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+                <span data-i18n="services.c3_f5">Priority follow-up counter assistance for repeat customers</span>
+              </li>
+            </ul>
+            <div class="service-card-action">
+              <button type="button" class="btn btn-secondary btn-service-trigger" data-service-val="After-Sales & Software / Data Support" data-i18n="services.c3_btn">Learn About Support</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. Happy Customers Section (Real-Time Customer Testimonials)
+         ========================================================================== -->
+    <section class="testimonials-section section-padding" id="testimonials">
+      <div class="container">
+        <div class="testimonials-header-bar">
+          <div>
+            <div class="section-badge" data-i18n="test.badge">Verified Community Trust</div>
+            <h2 class="section-title" style="text-align: left; margin-bottom: 0.5rem;" data-i18n="test.title">Happy Customers</h2>
+            <p class="section-description" style="text-align: left; max-width: 600px;" data-i18n="test.desc">
+              Real feedback from residents and local businesses in Lawan who trust Rahul Mobile Services Lawan for their mobile needs.
+            </p>
+          </div>
+
+          <!-- Overall Star Rating Badge -->
+          <div class="testimonials-stat-box">
+            <div class="stat-rating-number" id="publicAvgRating">5.0</div>
+            <div class="stat-stars-group">
+              <div class="stars-row" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <span class="stat-subtext" id="publicReviewCount" data-i18n="test.rating_text">Overall Rating from Lawan Customers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Testimonial Grid (Auto populated from storage) -->
+        <div class="testimonials-grid" id="testimonialsGrid">
+          <!-- Populated dynamically via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. Why Choose Us Section (4 Corporate Trust Pillars)
+         ========================================================================== -->
+    <section class="why-us-section section-padding" id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge" data-i18n="why.badge">Trust & Reliability</div>
+          <h2 class="section-title" data-i18n="why.title">Why Choose Rahul Mobile Services Lawan</h2>
+          <p class="section-description" data-i18n="why.desc">
+            Built on corporate standards of engineering precision, transparency, and deep community goodwill in Lawan.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1: Quality-Focused -->
+          <div class="pillar-card">
+            <div class="pillar-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="why.p1_title">Quality-Focused</h3>
+            <p class="pillar-description" data-i18n="why.p1_desc">
+              Every spare component undergoes pre-installation voltage, touch response, and color calibration testing.
+            </p>
+          </div>
+
+          <!-- Pillar 2: Fast Turnaround -->
+          <div class="pillar-card">
+            <div class="pillar-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42A8.962 8.962 0 0012 4c-4.97 0-9 4.03-9 9s4.02 9 9 9a8.994 8.994 0 007.03-14.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="why.p2_title">Fast Turnaround</h3>
+            <p class="pillar-description" data-i18n="why.p2_desc">
+              Express repairs for displays, batteries, and charging ports completed typically within 30 to 60 minutes.
+            </p>
+          </div>
+
+          <!-- Pillar 3: Honest Pricing -->
+          <div class="pillar-card">
+            <div class="pillar-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="why.p3_title">Honest Pricing</h3>
+            <p class="pillar-description" data-i18n="why.p3_desc">
+              Upfront, transparent diagnostic estimates with zero hidden fees. You approve the cost before any work begins.
+            </p>
+          </div>
+
+          <!-- Pillar 4: Customer Care -->
+          <div class="pillar-card">
+            <div class="pillar-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="why.p4_title">Customer Care</h3>
+            <p class="pillar-description" data-i18n="why.p4_desc">
+              Dedicated community support in Lawan with friendly guidance, patient problem solving, and dependable after-sales care.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. About Us Section
+         ========================================================================== -->
+    <section class="about-section section-padding" id="about">
+      <div class="container about-grid">
+        <div class="about-story">
+          <div class="section-badge" data-i18n="about.badge">About Our Enterprise</div>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 1.25rem;" data-i18n="about.title">Serving Lawan with Integrity & Precision</h2>
+          <p class="about-paragraph" data-i18n="about.p1">
+            Rahul Mobile Services Lawan is the premier mobile technology, precision hardware repair, and retail sales centre located in the heart of Lawan, Chhattisgarh. Founded with the mission to bring corporate-grade repair standards and genuine mobile electronics to our local community, we pride ourselves on honesty, speed, and technical excellence.
+          </p>
+          <p class="about-paragraph" data-i18n="about.p2">
+            Whether you require an emergency screen replacement, are purchasing your family's next smartphone, or need dependable after-sales data migration, our dedicated technicians treat every device with the utmost care and respect.
+          </p>
+
+          <!-- Core Values Checklist -->
+          <div class="values-checklist">
+            <div class="value-item">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span data-i18n="about.v1">Hardware Repair Integrity</span>
+            </div>
+            <div class="value-item">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span data-i18n="about.v2">Genuine Mobile Sales</span>
+            </div>
+            <div class="value-item">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span data-i18n="about.v3">Lifelong After-Sales Follow-Up</span>
+            </div>
+            <div class="value-item">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span data-i18n="about.v4">Community Customer Trust</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Stats Panel -->
+        <div class="about-stats-panel">
+          <div class="stats-grid-2x2">
+            <div class="stat-cell">
+              <div class="stat-cell-number" data-i18n="about.stat1_num">5,000+</div>
+              <div class="stat-cell-title" data-i18n="about.stat1_lbl">Devices Repaired</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-cell-number" data-i18n="about.stat2_num">100%</div>
+              <div class="stat-cell-title" data-i18n="about.stat2_lbl">Tested Spares</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-cell-number" data-i18n="about.stat3_num">8+ Yrs</div>
+              <div class="stat-cell-title" data-i18n="about.stat3_lbl">Lawan Experience</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-cell-number" data-i18n="about.stat4_num">99.4%</div>
+              <div class="stat-cell-title" data-i18n="about.stat4_lbl">Satisfaction Rate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. Mobile-First Contact Section
+         ========================================================================== -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge" data-i18n="contact.badge">Visit Or Reach Us</div>
+          <h2 class="section-title" data-i18n="contact.title">Contact Rahul Mobile Services Lawan</h2>
+          <p class="section-description" data-i18n="contact.desc">
+            We are conveniently located in the Main Road Market in Lawan. Call us, chat on WhatsApp, or stop by our store counter today.
+          </p>
+        </div>
+
+        <div class="contact-layout-grid">
+          <!-- Left: High Touch-Target Quick Actions & Store Details -->
+          <div class="touch-action-panel">
+            <h3 class="touch-action-title" data-i18n="contact.touch_title">Direct Contact Actions</h3>
+            <p class="touch-action-subtitle" data-i18n="contact.touch_subtitle">Tap below for instant connection with our counter in Lawan:</p>
+
+            <!-- Touch Action Buttons (Min 44px touch targets - designed at 52px) -->
+            <div class="touch-buttons-stack">
+              <!-- 1. Call Now -->
+              <a href="tel:+919876543210" class="touch-btn touch-btn-call" aria-label="Call Rahul Mobile Services Lawan at +91 98765 43210">
+                <div class="touch-btn-lead">
+                  <span class="touch-btn-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                  </span>
+                  <span data-i18n="contact.btn_call">Call Now</span>
+                </div>
+                <svg class="touch-btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+              </a>
+
+              <!-- 2. WhatsApp -->
+              <a href="https://wa.me/919876543210?text=Hello%20Rahul%20Mobile%20Services%20Lawan%2C%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="touch-btn touch-btn-whatsapp" aria-label="Chat with Rahul Mobile Services Lawan on WhatsApp">
+                <div class="touch-btn-lead">
+                  <span class="touch-btn-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.4 1.02 2.57.13.17 1.76 2.68 4.26 3.76.6.26 1.06.41 1.42.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/></svg>
+                  </span>
+                  <span data-i18n="contact.btn_whatsapp">Chat on WhatsApp</span>
+                </div>
+                <svg class="touch-btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+              </a>
+
+              <!-- 3. Get Directions -->
+              <a href="https://www.google.com/maps/search/?api=1&query=Lawan+Baloda+Bazar+Chhattisgarh" target="_blank" rel="noopener noreferrer" class="touch-btn touch-btn-maps" aria-label="Get directions to Rahul Mobile Services Lawan on Google Maps">
+                <div class="touch-btn-lead">
+                  <span class="touch-btn-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  </span>
+                  <span data-i18n="contact.btn_directions">Get Directions (Google Maps)</span>
+                </div>
+                <svg class="touch-btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+              </a>
+            </div>
+
+            <!-- Detailed Contact Info Items -->
+            <div class="contact-details-list">
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </div>
+                <div class="contact-info-text">
+                  <h4 data-i18n="contact.address_label">Store Location</h4>
+                  <p data-i18n="contact.address_val">Main Road Market, Lawan, Baloda Bazar District, Chhattisgarh - 493526</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                </div>
+                <div class="contact-info-text">
+                  <h4 data-i18n="contact.phone_label">Phone Number</h4>
+                  <p><a href="tel:+919876543210" style="color:inherit;font-weight:600;" data-i18n="contact.phone_val">+91 98765 43210</a></p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                </div>
+                <div class="contact-info-text">
+                  <h4 data-i18n="contact.hours_label">Business Working Hours</h4>
+                  <p data-i18n="contact.hours_val">Monday – Sunday: 9:30 AM to 8:30 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Quick Service Inquiry Form -->
+          <div class="inquiry-form-card">
+            <h3 class="inquiry-title" data-i18n="contact.form_title">Send a Quick Service Inquiry</h3>
+            <p class="inquiry-subtitle" data-i18n="contact.form_subtitle">
+              Leave your details and our team will prepare a quick estimate for your device.
+            </p>
+
+            <form id="quickInquiryForm" class="inquiry-form" novalidate>
+              <div class="form-group">
+                <label for="inquiryName" class="form-label" data-i18n="contact.f_name">Full Name</label>
+                <input type="text" id="inquiryName" class="form-input" required placeholder="e.g., Ramesh Verma" data-i18n-ph="contact.f_name_ph">
+              </div>
+
+              <div class="form-group">
+                <label for="inquiryPhone" class="form-label" data-i18n="contact.f_phone">Mobile Number</label>
+                <input type="tel" id="inquiryPhone" class="form-input" required placeholder="e.g., 9876543210" data-i18n-ph="contact.f_phone_ph">
+              </div>
+
+              <div class="form-group">
+                <label for="inquiryService" class="form-label" data-i18n="contact.f_service">Service Required</label>
+                <select id="inquiryService" class="form-select">
+                  <option value="Hardware Repair (Screen, Battery, Port)" data-i18n="contact.f_service_opt1">Hardware Repair (Screen, Battery, Port)</option>
+                  <option value="New Mobile Phone Sales" data-i18n="contact.f_service_opt2">New Mobile Phone Sales</option>
+                  <option value="Accessories & Screen Protection" data-i18n="contact.f_service_opt3">Accessories & Screen Protection</option>
+                  <option value="After-Sales & Software / Data Support" data-i18n="contact.f_service_opt4">After-Sales & Software / Data Support</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiryModel" class="form-label" data-i18n="contact.f_model">Device Model & Issue Description</label>
+                <textarea id="inquiryModel" class="form-textarea" placeholder="e.g., Vivo Y20 display touch not responding after fall..." data-i18n-ph="contact.f_model_ph"></textarea>
+              </div>
+
+              <div id="formStatusAlert" class="form-status-alert" role="alert"></div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; min-height: 48px;" data-i18n="contact.btn_submit">
+                Submit Service Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       9. Footer
+       ========================================================================== -->
+  <footer class="main-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <h3 class="footer-brand-title">Rahul Mobile Services Lawan</h3>
+          <p class="footer-brand-desc" data-i18n="footer.brand_desc">
+            Retail Smartphone Sales, Precision Hardware Mobile Repairs, and Customer-Centric After-Sales Services located in Lawan, Chhattisgarh.
+          </p>
+          <div style="display:flex; gap: 0.5rem; align-items: center; color: #cbd5e1; font-size: 0.8rem;">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#60a5fa;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Main Road Market, Lawan, CG</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Core Services -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer.col_services">Core Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services" class="footer-link" data-i18n="services.c1_title">Top Quality Repairing Services</a></li>
+            <li><a href="#services" class="footer-link" data-i18n="services.c2_title">Mobile Sales Services</a></li>
+            <li><a href="#services" class="footer-link" data-i18n="services.c3_title">After-Sales Services</a></li>
+            <li><a href="#services" class="footer-link">Express Screen Replacement</a></li>
+            <li><a href="#services" class="footer-link">Original Battery & Charging Fix</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer.col_quick">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link" data-i18n="nav.home">Home</a></li>
+            <li><a href="#testimonials" class="footer-link" data-i18n="nav.customers">Happy Customers</a></li>
+            <li><a href="#why-us" class="footer-link" data-i18n="nav.why_us">Why Choose Us</a></li>
+            <li><a href="#about" class="footer-link" data-i18n="nav.about">About Us</a></li>
+            <li><a href="#contact" class="footer-link" data-i18n="nav.contact">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Store Visit & Timings -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer.col_visit">Visit Store</h4>
+          <p style="font-size: 0.85rem; line-height: 1.5; color: #cbd5e1; margin-bottom: 0.75rem;">
+            Main Road Market, Lawan,<br>
+            Baloda Bazar District, CG - 493526
+          </p>
+          <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 1rem;">
+            Open: Mon - Sun (9:30 AM - 8:30 PM)
+          </p>
+          <a href="tel:+919876543210" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; min-height: 38px;">
+            +91 98765 43210
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright" data-i18n="footer.copy">
+          © 2026 Rahul Mobile Services Lawan. All rights reserved. Precision Mobile Technology & Services.
+        </div>
+
+        <!-- Discreet Secondary Admin Link -->
+        <button type="button" class="footer-admin-link btn-admin-trigger" title="Owner Access">
+          <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:currentColor;"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          <span data-i18n="footer.admin_portal">Store Admin Portal</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       DEMO ADMIN SYSTEM: 1. Login Modal (admin / admin123)
+       Accessible Dismissal: (1) X button, (2) Cancel button, (3) Backdrop click, (4) ESC key
+       ========================================================================== -->
+  <div class="admin-modal-backdrop" id="adminLoginBackdrop" role="dialog" aria-modal="true" aria-labelledby="adminLoginTitle">
+    <div class="admin-login-modal" id="adminLoginModal">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          <h3 class="modal-title" id="adminLoginTitle">Store Owner Login</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="adminLoginClose" aria-label="Close Admin Login Modal">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+
+      <form id="adminLoginForm" novalidate>
+        <div class="modal-body">
+          <div class="modal-credential-hint">
+            <strong>Demo Credentials:</strong><br>
+            Username: <code>admin</code> &bull; Password: <code>admin123</code>
+          </div>
+
+          <div id="adminLoginError" class="modal-error-alert" role="alert">
+            Invalid credentials. Please use username: admin and password: admin123
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.25rem;">
+            <label for="adminUsername" class="form-label">Username</label>
+            <input type="text" id="adminUsername" class="form-input" required autocomplete="username" placeholder="Enter 'admin'">
+          </div>
+
+          <div class="form-group">
+            <label for="adminPassword" class="form-label">Password</label>
+            <input type="password" id="adminPassword" class="form-input" required autocomplete="current-password" placeholder="Enter 'admin123'">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="adminLoginCancel">Cancel</button>
+          <button type="submit" class="btn btn-primary">Log In</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       DEMO ADMIN SYSTEM: 2. Admin Review Management Dashboard
+       Accessible upon successful login
+       ========================================================================== -->
+  <div class="admin-dashboard-overlay" id="adminDashboardOverlay" role="dialog" aria-modal="true" aria-label="Admin Management Dashboard">
+    <div class="admin-dashboard-topbar">
+      <div class="admin-topbar-inner">
+        <div class="admin-header-brand">
+          <span class="admin-badge-tag">Admin Portal</span>
+          <span class="admin-store-name">Rahul Mobile Services Lawan</span>
+        </div>
+
+        <div class="admin-user-controls">
+          <div class="admin-user-pill">
+            <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            <span>Logged in as: <strong>Administrator</strong></span>
+          </div>
+          <button type="button" class="btn-admin-logout" id="adminDashboardLogout">
+            <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:currentColor;"><path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/></svg>
+            <span>Exit Dashboard</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="admin-main-container">
+      <!-- Admin Stats Summary Ribbon -->
+      <div class="admin-stats-ribbon">
+        <div class="admin-stat-card">
+          <div class="admin-stat-info">
+            <h5>Total Reviews</h5>
+            <div class="stat-val" id="adminStatTotalReviews">3</div>
+          </div>
+          <div class="admin-stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+          </div>
+        </div>
+
+        <div class="admin-stat-card">
+          <div class="admin-stat-info">
+            <h5>Average Rating</h5>
+            <div class="stat-val" id="adminStatAvgRating">5.0 / 5.0</div>
+          </div>
+          <div class="admin-stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+        </div>
+
+        <div class="admin-stat-card">
+          <div class="admin-stat-info">
+            <h5>Customer Inquiries</h5>
+            <div class="stat-val" id="adminStatInquiries">2</div>
+          </div>
+          <div class="admin-stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+        </div>
+
+        <div class="admin-stat-card">
+          <div class="admin-stat-info">
+            <h5>Store Location</h5>
+            <div class="stat-val" style="font-size:1.1rem; font-weight:700; color:var(--brand-blue);">Lawan, CG</div>
+          </div>
+          <div class="admin-stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Tabs Navigation -->
+      <div class="admin-tabs-nav">
+        <button type="button" class="admin-tab-btn active" data-tab="tabReviews">
+          <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:currentColor;"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+          <span>Customer Testimonials Management</span>
+        </button>
+        <button type="button" class="admin-tab-btn" data-tab="tabInquiries">
+          <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:currentColor;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span>Customer Inquiries Log</span>
+          <span class="tab-badge" id="tabInquiryBadge">Live</span>
+        </button>
+      </div>
+
+      <!-- Tab 1: Customer Testimonials Management -->
+      <div class="admin-tab-content" id="tabReviews">
+        <div class="admin-content-grid">
+          <!-- Left: Add New Customer Review Form -->
+          <div class="admin-panel-card">
+            <h4 class="panel-title">
+              <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              <span>Add Customer Testimonial</span>
+            </h4>
+            <p class="panel-subtitle">Newly added reviews will instantly display on the public website.</p>
+
+            <form id="adminReviewForm" novalidate>
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label for="adminCustomerName" class="form-label">Customer Name *</label>
+                <input type="text" id="adminCustomerName" class="form-input" required placeholder="e.g., Rajesh Sharma">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label for="adminCustomerLocation" class="form-label">Customer Location / Ward</label>
+                <input type="text" id="adminCustomerLocation" class="form-input" placeholder="e.g., Lawan Main Market or Baloda Bazar">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label for="adminReviewService" class="form-label">Service Received *</label>
+                <select id="adminReviewService" class="form-select">
+                  <option value="Screen & Display Replacement">Screen & Display Replacement</option>
+                  <option value="Battery & Charging Port Fix">Battery & Charging Port Fix</option>
+                  <option value="Smartphone Sales & Data Migration">Smartphone Sales & Data Migration</option>
+                  <option value="Water Damage & Motherboard Repair">Water Damage & Motherboard Repair</option>
+                  <option value="Accessories & Tempered Glass">Accessories & Tempered Glass</option>
+                  <option value="Software Update & Diagnostics">Software Update & Diagnostics</option>
+                </select>
+              </div>
+
+              <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                <div class="form-group">
+                  <label for="adminReviewRating" class="form-label">Star Rating *</label>
+                  <select id="adminReviewRating" class="form-select">
+                    <option value="5" selected>5 Stars (Excellent)</option>
+                    <option value="4">4 Stars (Very Good)</option>
+                    <option value="3">3 Stars (Good)</option>
+                    <option value="2">2 Stars (Fair)</option>
+                    <option value="1">1 Star (Poor)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="adminReviewDate" class="form-label">Review Date</label>
+                  <input type="date" id="adminReviewDate" class="form-input">
+                </div>
+              </div>
+
+              <!-- Customer Photo Input with Base64 Preview -->
+              <div class="form-group" style="margin-bottom: 1.25rem;">
+                <label class="form-label">Customer Photo (Optional)</label>
+                <div class="photo-upload-group">
+                  <div class="photo-preview-circle">
+                    <img id="adminPhotoPreview" src="" alt="Preview" style="display:none;">
+                    <svg viewBox="0 0 24 24" style="width:24px;height:24px;fill:currentColor;"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                  </div>
+                  <div class="photo-upload-actions">
+                    <div class="file-input-wrapper">
+                      <button type="button" class="file-custom-btn">
+                        <svg viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>
+                        <span>Choose Photo</span>
+                      </button>
+                      <input type="file" id="adminCustomerPhoto" accept="image/*" aria-label="Upload Customer Photo">
+                    </div>
+                    <span class="photo-help-text">JPG, PNG or WebP. Auto-generates initial avatar if omitted.</span>
+                    <button type="button" class="btn-clear-photo" id="adminClearPhoto">Remove Photo</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="adminReviewText" class="form-label">Customer Review Text *</label>
+                <textarea id="adminReviewText" class="form-textarea" required placeholder="Write genuine customer feedback here..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;">
+                <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:currentColor;"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
+                <span>Save Review</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Testimonial List with Instant Delete Action -->
+          <div class="admin-panel-card">
+            <div class="admin-reviews-list-header">
+              <div>
+                <h4 class="panel-title">
+                  <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+                  <span>Active Customer Testimonials</span>
+                </h4>
+                <p class="panel-subtitle" style="margin-bottom:0;">Live testimonials synced with persistent local storage.</p>
+              </div>
+              <button type="button" class="btn-reset-demo" id="btnResetDemoReviews" title="Restore default Lawan demo reviews">
+                <svg viewBox="0 0 24 24"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+                <span>Reset Demo Reviews</span>
+              </button>
+            </div>
+
+            <!-- List rendered dynamically by js/admin.js -->
+            <div class="admin-reviews-table" id="adminReviewsTable">
+              <!-- Content loaded via JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Customer Inquiries Log -->
+      <div class="admin-tab-content" id="tabInquiries" style="display:none;">
+        <div class="admin-panel-card">
+          <h4 class="panel-title">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>Customer Service Inquiries</span>
+          </h4>
+          <p class="panel-subtitle">Submitted directly from the public website contact form.</p>
+
+          <div style="overflow-x: auto;">
+            <table class="inquiries-table">
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Phone Number</th>
+                  <th>Service Needed</th>
+                  <th>Device / Issue Details</th>
+                  <th>Received On</th>
+                </tr>
+              </thead>
+              <tbody id="adminInquiriesTableBody">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delete Confirmation Dialog -->
+  <div class="confirm-dialog-backdrop" id="confirmDialogBackdrop" role="dialog" aria-modal="true" aria-labelledby="confirmDialogTitle">
+    <div class="confirm-dialog-box">
+      <h4 class="confirm-dialog-title" id="confirmDialogTitle">Delete Review</h4>
+      <p class="confirm-dialog-message">Are you sure you want to permanently remove this customer testimonial? This action will update the public website immediately.</p>
+      <div class="confirm-dialog-actions">
+        <button type="button" class="btn btn-secondary" id="confirmDialogCancel">Cancel</button>
+        <button type="button" class="btn btn-primary" id="confirmDialogOk" style="background-color:var(--color-error); border-color:var(--color-error);">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/storage.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
