@@ -65,7 +65,8 @@
         <ul class="nav-list">
           <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
           <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
-          <li><a href="#testimonials" class="nav-link" data-i18n="nav.customers">Happy Customers</a></li>
+          <li><a href="happy-customers.html" target="_blank" class="nav-link" data-i18n="nav.customers">Happy Customers ↗</a></li>
+          <li><a href="#testimonials" class="nav-link" data-i18n="nav.reviews">Customer Reviews</a></li>
           <li><a href="#why-us" class="nav-link" data-i18n="nav.why_us">Why Choose Us</a></li>
           <li><a href="#about" class="nav-link" data-i18n="nav.about">About Us</a></li>
           <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
@@ -108,7 +109,8 @@
     <div class="mobile-drawer-links">
       <a href="#home" class="mobile-drawer-link" data-i18n="nav.home">Home</a>
       <a href="#services" class="mobile-drawer-link" data-i18n="nav.services">Services</a>
-      <a href="#testimonials" class="mobile-drawer-link" data-i18n="nav.customers">Happy Customers</a>
+      <a href="happy-customers.html" target="_blank" class="mobile-drawer-link" data-i18n="nav.customers">Happy Customers ↗</a>
+      <a href="#testimonials" class="mobile-drawer-link" data-i18n="nav.reviews">Customer Reviews</a>
       <a href="#why-us" class="mobile-drawer-link" data-i18n="nav.why_us">Why Choose Us</a>
       <a href="#about" class="mobile-drawer-link" data-i18n="nav.about">About Us</a>
       <a href="#contact" class="mobile-drawer-link" data-i18n="nav.contact">Contact</a>
@@ -382,40 +384,20 @@
     </section>
 
     <!-- ==========================================================================
-         5. Happy Customers & Delivery Photo Gallery Section
+         5. Happy Customers Section (Verified Customer Reviews & Ratings ONLY)
          ========================================================================== -->
     <section class="testimonials-section section-padding" id="testimonials">
       <div class="container">
         <div class="section-header">
           <div class="section-badge" data-i18n="test.badge">Verified Community Trust</div>
-          <h2 class="section-title" data-i18n="test.title">Happy Customers & Delivery Gallery</h2>
+          <h2 class="section-title" data-i18n="test.title">Happy Customers — Verified Reviews & Ratings</h2>
           <p class="section-description" data-i18n="test.desc">
-            Real feedback and smiling customer delivery moments from residents who trust Rahul Mobile Services Lawan.
+            Real feedback and ratings from verified smartphone owners across Lawan and Baloda Bazar district.
           </p>
         </div>
 
-        <!-- Part A: Full-Size Smiling Customer Delivery Photo Gallery -->
-        <div class="gallery-showcase-wrapper">
-          <div style="text-align:center; margin-bottom: 1.5rem;">
-            <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--brand-navy-dark); margin-bottom: 0.35rem;" data-i18n="test.gallery_title">Full-Size Customer Delivery Photo Gallery</h3>
-            <p style="font-size: 0.9rem; color: var(--text-secondary);" data-i18n="test.gallery_desc">Real customers proudly holding their newly purchased smartphones and precision-repaired devices at our Lawan counter.</p>
-          </div>
-
-          <!-- Interactive Filter Tabs -->
-          <div class="gallery-tabs-filter" role="tablist" aria-label="Customer Delivery Categories">
-            <button type="button" class="gallery-filter-btn active" data-filter="all" data-i18n="test.filter_all">All Handover Moments</button>
-            <button type="button" class="gallery-filter-btn" data-filter="sales" data-i18n="test.filter_sales">New Smartphone Sales</button>
-            <button type="button" class="gallery-filter-btn" data-filter="repair" data-i18n="test.filter_repair">Precision Repairs</button>
-          </div>
-
-          <!-- Full-Size Customer Delivery Photo Cards Grid -->
-          <div class="customer-gallery-grid" id="customerGalleryGrid">
-            <!-- Dynamically populated via js/app.js -->
-          </div>
-        </div>
-
-        <!-- Part B: Verified Customer Written Reviews & Overall Rating -->
-        <div class="testimonials-header-bar" style="margin-top: 2rem;">
+        <!-- Verified Customer Written Reviews & Overall Rating Bar -->
+        <div class="testimonials-header-bar">
           <div>
             <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;" data-i18n="test.reviews_tab">Customer Reviews & Ratings</h3>
             <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Verified community experiences from Lawan and Baloda Bazar district.</p>
@@ -437,9 +419,27 @@
           </div>
         </div>
 
-        <!-- Dynamic Testimonial Grid (Auto populated from storage) -->
+        <!-- Dynamic Testimonial Grid (Only Reviews) -->
         <div class="testimonials-grid" id="testimonialsGrid">
           <!-- Populated dynamically via js/app.js -->
+        </div>
+
+        <!-- Callout Banner to Dedicated Full-Size Photo Gallery (Opens in New Tab) -->
+        <div style="margin-top: 3.5rem; background: linear-gradient(135deg, #f0f7ff 0%, #e0effe 100%); border: 1.5px solid #bfdbfe; border-radius: var(--radius-xl); padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.08);">
+          <div style="flex: 1; min-width: 280px;">
+            <div style="display: inline-flex; align-items: center; gap: 0.4rem; background: var(--brand-blue); color: #ffffff; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.25rem 0.65rem; border-radius: var(--radius-full); margin-bottom: 0.75rem;">
+              <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:currentColor;"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+              <span>Full-Size Photo Gallery</span>
+            </div>
+            <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--brand-navy-dark); margin-bottom: 0.4rem;">Looking for Customer Delivery Photos?</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">See smiling customers proudly holding their newly purchased and precision-repaired smartphones at our Lawan counter. All photos displayed together in our dedicated "Happy Customers" tab.</p>
+          </div>
+          <div>
+            <a href="happy-customers.html" target="_blank" class="btn btn-primary" style="white-space: nowrap; font-size: 0.95rem; padding: 0.85rem 1.6rem; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);">
+              <span data-i18n="gallery.open_btn">Open Happy Customers Gallery ↗</span>
+              <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -734,7 +734,8 @@
           <h4 class="footer-col-title" data-i18n="footer.col_quick">Quick Links</h4>
           <ul class="footer-links-list">
             <li><a href="#home" class="footer-link" data-i18n="nav.home">Home</a></li>
-            <li><a href="#testimonials" class="footer-link" data-i18n="nav.customers">Happy Customers</a></li>
+            <li><a href="happy-customers.html" target="_blank" class="footer-link" data-i18n="nav.customers">Happy Customers ↗</a></li>
+            <li><a href="#testimonials" class="footer-link" data-i18n="nav.reviews">Customer Reviews</a></li>
             <li><a href="#why-us" class="footer-link" data-i18n="nav.why_us">Why Choose Us</a></li>
             <li><a href="#about" class="footer-link" data-i18n="nav.about">About Us</a></li>
             <li><a href="#contact" class="footer-link" data-i18n="nav.contact">Contact & Location</a></li>

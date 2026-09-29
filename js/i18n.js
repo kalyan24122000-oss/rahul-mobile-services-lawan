@@ -17,12 +17,20 @@ const translations = {
     "nav.home": "Home",
     "nav.services": "Services",
     "nav.customers": "Happy Customers",
+    "nav.reviews": "Customer Reviews",
     "nav.why_us": "Why Choose Us",
     "nav.about": "About Us",
     "nav.contact": "Contact",
     "nav.get_started": "Book Repair",
     "nav.admin_login": "Admin Login",
     "brand.sub": "Sales • Precision Repair • After-Sales | Lawan, CG",
+
+    // Dedicated Gallery Page (Happy Customers)
+    "gallery.page_title": "Happy Customers — Customer Delivery Photo Gallery",
+    "gallery.page_desc": "All smiling customers proudly holding their newly purchased smartphones and precision-repaired devices at Rahul Mobile Services Lawan.",
+    "gallery.back_home": "← Back to Main Website",
+    "gallery.all_notice": "Displaying all verified customer device handovers and smiling deliveries together in Lawan, Chhattisgarh.",
+    "gallery.open_btn": "Open Full-Size Customer Photo Gallery (New Tab) ↗",
 
     // Hero Section
     "hero.badge": "Official Store & Precision Repair Centre in Lawan",
@@ -85,17 +93,10 @@ const translations = {
     "services.c3_f5": "Priority follow-up counter assistance for repeat customers",
     "services.c3_btn": "Learn About Support",
 
-    // Testimonials Section & Customer Photo Gallery
+    // Bottom Testimonials Section (Only Reviews)
     "test.badge": "Verified Community Trust",
-    "test.title": "Happy Customers & Delivery Gallery",
-    "test.desc": "Real feedback and smiling customer delivery moments from residents who trust Rahul Mobile Services Lawan.",
-    "test.gallery_title": "Full-Size Customer Delivery Photo Gallery",
-    "test.gallery_desc": "Real customers proudly holding their newly purchased smartphones and precision-repaired devices at our Lawan counter.",
-    "test.filter_all": "All Handover Moments",
-    "test.filter_sales": "New Smartphone Sales",
-    "test.filter_repair": "Precision Repairs",
-    "test.reviews_tab": "Customer Reviews & Ratings",
-    "test.gallery_tab": "Customer Photo Gallery",
+    "test.title": "Happy Customers — Verified Reviews & Ratings",
+    "test.desc": "Real feedback and experiences from residents in Lawan who trust Rahul Mobile Services Lawan for their mobile sales and precision repairs.",
     "test.rating_text": "Overall Rating from Lawan Customers",
     "test.verified_badge": "Verified Customer",
     "test.device_label": "Device Handover",
@@ -182,7 +183,8 @@ const translations = {
     // Header & Navigation
     "nav.home": "होम",
     "nav.services": "सेवाएं",
-    "nav.customers": "संतुष्ट ग्राहक",
+    "nav.customers": "Happy Customers (गैलरी ↗)",
+    "nav.reviews": "ग्राहक समीक्षाएं",
     "nav.why_us": "हमें क्यों चुनें",
     "nav.about": "हमारे बारे में",
     "nav.contact": "संपर्क करें",
@@ -251,17 +253,17 @@ const translations = {
     "services.c3_f5": "हमारे नियमित ग्राहकों के लिए काउंटर पर प्राथमिकता सेवा",
     "services.c3_btn": "सपोर्ट के बारे में जानें",
 
-    // Testimonials Section & Customer Photo Gallery
+    // Dedicated Gallery Page (Happy Customers)
+    "gallery.page_title": "Happy Customers — ग्राहक डिलीवरी फोटो गैलरी",
+    "gallery.page_desc": "Rahul Mobile Services Lawan से खरीदे गए नए स्मार्टफोन्स और रिपेयर कराए गए मोबाइल्स को हाथ में थामे हमारे मुस्कुराते ग्राहकों की सभी तस्वीरें।",
+    "gallery.back_home": "← मुख्य वेबसाइट पर वापस जाएं",
+    "gallery.all_notice": "लवन (छत्तीसगढ़) में सभी सत्यापित ग्राहक डिलीवरी और मुस्कुराते चेहरों की तस्वीरें एक साथ बिना किसी फ़िल्टर के।",
+    "gallery.open_btn": "फुल-साइज कस्टमर फोटो गैलरी खोलें (नया टैब) ↗",
+
+    // Testimonials Section (Only Reviews)
     "test.badge": "सत्यापित स्थानीय भरोसा",
-    "test.title": "संतुष्ट ग्राहक एवं डिलीवरी गैलरी",
-    "test.desc": "लवन और आसपास के क्षेत्रों के वास्तविक ग्राहकों के अनुभव और नए फोन के साथ उनकी मुस्कान।",
-    "test.gallery_title": "फुल-साइज कस्टमर डिलीवरी फोटो गैलरी",
-    "test.gallery_desc": "Rahul Mobile Services Lawan से खरीदे गए नए स्मार्टफोन्स और रिपेयर कराए गए मोबाइल्स को हाथ में थामे हमारे मुस्कुराते ग्राहकों की झलकियां।",
-    "test.filter_all": "सभी डिलीवरी एवं हैंडओवर",
-    "test.filter_sales": "नए स्मार्टफोन की खरीदारी",
-    "test.filter_repair": "सटीक रिपेयरिंग हैंडओवर",
-    "test.reviews_tab": "समीक्षाएं एवं रेटिंग्स",
-    "test.gallery_tab": "कस्टमर फोटो गैलरी",
+    "test.title": "Happy Customers — संतुष्ट ग्राहक समीक्षाएं एवं रेटिंग्स",
+    "test.desc": "लवन और आसपास के क्षेत्रों के वास्तविक निवासियों के अनुभव, जो Rahul Mobile Services Lawan पर भरोसा करते हैं।",
     "test.rating_text": "लवन के ग्राहकों द्वारा समग्र रेटिंग",
     "test.verified_badge": "सत्यापित ग्राहक",
     "test.device_label": "हैंडओवर डिवाइस",
